@@ -57,4 +57,7 @@ heading.innerText = 'DOM IS AWESOME'
 let headingImg = document.getElementById("cta-img");
 headingImg.setAttribute('src', siteContent["cta"]["img-src"])
 
+//add button text
+const buttonTxt = document.querySelector('button')
+buttonTxt.innerText = 'Get Started'
 
