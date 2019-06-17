@@ -80,3 +80,12 @@ mainContentTxt[4].innerText = '"Vision content elementum magna eros, ac posuere 
 let mainContentImg = document.getElementById("middle-img");
 mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
 
+//add contact info
+const contactHeader = document.querySelectorAll('h4')
+contactHeader[5].innerText = 'Contact'
+const contactTxt = document.querySelectorAll('p')
+contactTxt[5].innerText = '123 Way 456 Street Somewhere, USA'
+contactTxt[6].innerText = '1 (888) 888-8888'
+contactTxt[7].innerText = 'sales@greatidea.io'
+
+// add footer info
