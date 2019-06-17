@@ -36,14 +36,18 @@ const siteContent = {
     "copyright" : "Copyright Great Idea! 2018"
   },
 };
+
 //add navigation 
 const nav = document.querySelectorAll('a')
-nav[0].innerText = 'Services'
-nav[1].innerText = 'Product'
-nav[2].innerText = 'Vision'
-nav[3].innerText = 'Features'
-nav[4].innerText = 'About'
-nav[5].innerText = 'Contact'
+function makeTextForNav(nav) {
+  let i;
+  const len = nav.length;
+  const textContent = ["Services", "Products", "Vision", 'Features', 'About', 'Contact']
+  for (i = 0; i < len; i += 1) {
+      nav[i].innerText = textContent[i];
+  }
+}
+makeTextForNav(nav);
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
@@ -63,18 +67,28 @@ buttonTxt.innerText = 'Get Started'
 
 // add main content txt headers
 const mainContentHeaders = document.querySelectorAll('h4')
-mainContentHeaders[0].innerText = 'Features'
-mainContentHeaders[1].innerText = 'About'
-mainContentHeaders[2].innerText = 'Services'
-mainContentHeaders[3].innerText = 'Product'
-mainContentHeaders[4].innerText = 'Vision'
+function h4MainContentHeader(mainContentHeaders) {
+  let i; 
+  const headerH4Len = mainContentHeaders.length;
+  const tittleMainContent = ['Features', 'About', 'Services','Services', 'Product', 'Vision']
+  for (i =0 ; i < headerH4Len; i++){
+    mainContentHeaders[i].innerText = tittleMainContent[i];
+  }
+}
+h4MainContentHeader(mainContentHeaders);
 
 const mainContentTxt =document.querySelectorAll('p')
-mainContentTxt[0].innerText = 'Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-mainContentTxt[1].innerText = 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-mainContentTxt[2].innerText = 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-mainContentTxt[3].innerText = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
-mainContentTxt[4].innerText = '"Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
+
+function paraForMainContent(mainContentTxt){
+  let i;
+  const mainContentPara = mainContentTxt.length;
+  const txtContent = ['Features content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.', 'About content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.', 'Services content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.', 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.','Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.']
+  for (i =0; i< mainContentPara; i++){
+    mainContentTxt[i].innerText = txtContent[i];
+  }
+}
+paraForMainContent(mainContentTxt);
+
 
 //main content img 
 let mainContentImg = document.getElementById("middle-img");
@@ -89,3 +103,5 @@ contactTxt[6].innerText = '1 (888) 888-8888'
 contactTxt[7].innerText = 'sales@greatidea.io'
 
 // add footer info
+const footer = document.querySelectorAll('p')
+footer[8].innerText = 'Copyright Great Idea! 2018'
