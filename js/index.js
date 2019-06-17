@@ -36,6 +36,13 @@ const siteContent = {
     "copyright" : "Copyright Great Idea! 2018"
   },
 };
+const nav = document.querySelectorAll('a')
+nav[0].innerText = 'Services'
+nav[1].innerText = 'Product'
+nav[2].innerText = 'Vision'
+nav[3].innerText = 'Features'
+nav[4].innerText = 'About'
+nav[5].innerText = 'Contact'
 
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
