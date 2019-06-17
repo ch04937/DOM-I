@@ -36,6 +36,7 @@ const siteContent = {
     "copyright" : "Copyright Great Idea! 2018"
   },
 };
+//add navigation 
 const nav = document.querySelectorAll('a')
 nav[0].innerText = 'Services'
 nav[1].innerText = 'Product'
@@ -47,3 +48,13 @@ nav[5].innerText = 'Contact'
 // Example: Update the img src for the logo
 let logo = document.getElementById("logo-img");
 logo.setAttribute('src', siteContent["nav"]["img-src"])
+
+//add DOM is Awesome 
+const heading = document.querySelector('h1')
+heading.innerText = 'DOM IS AWESOME'
+
+//add img for heading 
+let headingImg = document.getElementById("cta-img");
+headingImg.setAttribute('src', siteContent["cta"]["img-src"])
+
+
