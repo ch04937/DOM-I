@@ -61,3 +61,11 @@ headingImg.setAttribute('src', siteContent["cta"]["img-src"])
 const buttonTxt = document.querySelector('button')
 buttonTxt.innerText = 'Get Started'
 
+// add main content txt headers
+const mainContentHeaders = document.querySelectorAll('h4')
+mainContentHeaders[0].innerText = 'Features'
+mainContentHeaders[1].innerText = 'About'
+mainContentHeaders[2].innerText = 'Services'
+mainContentHeaders[3].innerText = 'Product'
+mainContentHeaders[4].innerText = 'Vision'
+
