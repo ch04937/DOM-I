@@ -76,3 +76,7 @@ mainContentTxt[2].innerText = 'Services content elementum magna eros, ac posuere
 mainContentTxt[3].innerText = 'Product content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 mainContentTxt[4].innerText = '"Vision content elementum magna eros, ac posuere elvit tempus et. Suspendisse vel tempus odio, in interdutm nisi. Suspendisse eu ornare nisl. Nullam convallis augue justo, at imperdiet metus scelerisque quis.'
 
+//main content img 
+let mainContentImg = document.getElementById("middle-img");
+mainContentImg.setAttribute('src', siteContent["main-content"]["middle-img-src"])
+
